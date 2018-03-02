@@ -1,0 +1,6 @@
+{
+  // Options
+  "esversion": 6,
+  // Environments
+	"browser": true
+}
