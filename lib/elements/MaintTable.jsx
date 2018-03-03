@@ -1,7 +1,11 @@
 import React from 'react';
 
 const MaintTable = () => (
-	<table>Maint Table</table>
+	<table>
+		<tr>
+			<td>Maint Table</td>
+		</tr>
+	</table>
 );
 
 export default MaintTable;
