@@ -7,9 +7,9 @@ const Adapter = require('enzyme-adapter-react-16');
 configure({ adapter: new Adapter() });
 
 const exposedProperties = ['window', 'navigator', 'document'];
-const { document } = (new JSDOM('<!doctype html><html><body></body></html>')).window;
+const { document: doc } = (new JSDOM('<!doctype html><html><body></body></html>')).window;
 
-global.document = document;
+global.document = doc;
 global.window = document.defaultView;
 Object.keys(document.defaultView).forEach((property) => {
 	if (typeof global[property] === 'undefined') {

@@ -1,7 +1,8 @@
-/* jshint expr: true */
+/* jshint ignore: start */
 import React from 'react';
 import { expect } from 'chai';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
+
 import MaintTable from '../lib/elements/MaintTable';
 
 describe('MaintTable', () => {
